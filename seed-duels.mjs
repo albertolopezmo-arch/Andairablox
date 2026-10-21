@@ -1,4 +1,0 @@
-import {DUEL_CHARACTERS,characterRound} from './web/duel-questions.js';
-import fs from 'node:fs';
-const questions=DUEL_CHARACTERS.flatMap(c=>characterRound(c.id).map(q=>({id:q.id,avatar_id:c.id,prompt:q.prompt,options:q.options,correct_index:q.correctIndex})));
-fs.writeFileSync('backend/007_duel_question_seed.sql',`-- Ejecutar después de 007_duels.sql. 5 preguntas por personaje; banco privado.\nbegin;\ninsert into public.quiz_lqsa_duel_questions(id,avatar_id,prompt,options,correct_index)\nselect id,avatar_id,prompt,options,correct_index from jsonb_to_recordset($questions$${JSON.stringify(questions)}$questions$::jsonb) as q(id text,avatar_id text,prompt text,options jsonb,correct_index integer)\non conflict(id) do update set avatar_id=excluded.avatar_id,prompt=excluded.prompt,options=excluded.options,correct_index=excluded.correct_index;\ncommit;\n`);
