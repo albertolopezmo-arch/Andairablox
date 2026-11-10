@@ -1,0 +1,45 @@
+.christmas-home .hero {
+  background: radial-gradient(circle at 74% 44%, rgba(200, 28, 45, .13), transparent 27%),
+              radial-gradient(circle at 80% 67%, rgba(31, 125, 83, .12), transparent 24%),
+              #fffaf3;
+}
+
+.christmas-home .hero-atmosphere {
+  background: radial-gradient(circle at 72% 44%, rgba(255, 210, 92, .25), transparent 32%);
+}
+
+.christmas-home .night-cat,
+.christmas-home .moon,
+.christmas-home .scene-landscape,
+.christmas-home .book-pages,
+.christmas-home .book-back,
+.christmas-home .book-spine,
+.christmas-home .sample-controls,
+.christmas-home .sample-dialog,
+.christmas-home .bat-swarm,
+.christmas-home .magic-hint {
+  display: none !important;
+}
+
+.christmas-home .magic-book {
+  cursor: default;
+  pointer-events: none;
+}
+
+.christmas-home .book-front {
+  transform: none !important;
+}
+
+.christmas-home .sticker {
+  background: #b91f32;
+  color: #fff;
+}
+
+.christmas-home .hero-purchase .button {
+  background: #16704b;
+  border-color: #16704b;
+}
+
+.christmas-home .feature {
+  background: linear-gradient(135deg, #fff8e8, #f1fbf5);
+}
