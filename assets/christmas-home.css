@@ -1,11 +1,69 @@
+.christmas-home {
+  background: #f7f3e8;
+  color: #173e30;
+}
+
+.christmas-home .header {
+  background: #123d2d !important;
+}
+
+.christmas-home .header .brand span,
+.christmas-home .header nav,
+.christmas-home .hero-catalog-link,
+.christmas-home .hero-note,
+.christmas-home .hero .eyebrow {
+  color: #dcebdd !important;
+}
+
+.christmas-home .languages a[aria-current="page"] {
+  background: #b51f32;
+}
+
 .christmas-home .hero {
-  background: radial-gradient(circle at 74% 44%, rgba(200, 28, 45, .13), transparent 27%),
-              radial-gradient(circle at 80% 67%, rgba(31, 125, 83, .12), transparent 24%),
-              #fffaf3;
+  background-color: #0c3326;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,.9) 0 2px, transparent 3px),
+    radial-gradient(circle at 28% 72%, rgba(255,255,255,.65) 0 1px, transparent 2px),
+    radial-gradient(circle at 64% 12%, rgba(255,255,255,.75) 0 2px, transparent 3px),
+    radial-gradient(circle at 88% 66%, rgba(255,255,255,.6) 0 1px, transparent 2px),
+    radial-gradient(circle at 74% 44%, rgba(200, 28, 45, .24), transparent 28%),
+    radial-gradient(circle at 80% 67%, rgba(20, 99, 66, .42), transparent 30%),
+    linear-gradient(145deg, #0b2d22, #16553b 70%, #0d3427);
+  background-size: 145px 145px, 115px 115px, 180px 180px, 95px 95px, auto, auto, auto;
 }
 
 .christmas-home .hero-atmosphere {
-  background: radial-gradient(circle at 72% 44%, rgba(255, 210, 92, .25), transparent 32%);
+  background:
+    radial-gradient(circle at 72% 44%, rgba(255, 215, 117, .3), transparent 32%),
+    linear-gradient(115deg, transparent 55%, rgba(181,31,50,.14));
+}
+
+.christmas-home .hero h1 em {
+  background: linear-gradient(115deg, #fff4ca, #f3c866 55%, #ffffff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.christmas-home em,
+.christmas-home .brand span,
+.christmas-home .text-link,
+.christmas-home .big-number {
+  color: #176044;
+}
+
+.christmas-home .dot {
+  background: #d4b75d;
+  box-shadow: 0 0 14px #d4b75d;
+}
+
+.christmas-home .portal-ring {
+  border-color: rgba(231, 205, 122, .35);
+}
+
+.christmas-home .stage-spark,
+.christmas-home .hero-note span {
+  color: #f3d377 !important;
 }
 
 .christmas-home .night-cat,
@@ -42,4 +100,17 @@
 
 .christmas-home .feature {
   background: linear-gradient(135deg, #fff8e8, #f1fbf5);
+}
+
+.christmas-home .story-note,
+.christmas-home .author-strip {
+  background: #e3eee7;
+}
+
+.christmas-home .ribbon span[aria-hidden] {
+  color: #176044;
+}
+
+.christmas-home .book-card.purple .cover-link {
+  background: #dbeadf;
 }
