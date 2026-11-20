@@ -1,0 +1,32 @@
+name: Auditoría SEO semanal
+on:
+  schedule:
+    - cron: '20 7 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: seo-semanal
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Revisar sitio y guardar el resultado
+        env:
+          SITE_URL: https://andairablox.es
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SEO_INGEST_SECRET: ${{ secrets.SEO_INGEST_SECRET }}
+        run: node scripts/seo-audit.mjs
+      - name: Conservar informe técnico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-report
+          path: seo-report.json
+          retention-days: 30
