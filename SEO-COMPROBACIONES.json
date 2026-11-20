@@ -1,5 +1,5 @@
 {
-  "pages": 30,
+  "pages": 32,
   "books": 6,
   "languages": {
     "es": 10,
@@ -8,11 +8,11 @@
   },
   "broken_local_links": 0,
   "broken_schema_images": 0,
-  "unique_titles": 30,
-  "unique_descriptions": 30,
-  "sitemap_urls": 30,
+  "unique_titles": 32,
+  "unique_descriptions": 32,
+  "sitemap_urls": 32,
   "hreflang_reciprocal": true,
-  "indexable_documents": 30,
+  "indexable_documents": 32,
   "publication_verified": false,
   "search_console_verified": false,
   "lighthouse_measured": false,
