@@ -1,0 +1,30 @@
+{
+  "siteUrl": "https://andairablox.es",
+  "score": 90,
+  "pagesChecked": 0,
+  "errors": 1,
+  "warnings": 1,
+  "passed": 0,
+  "issues": [
+    {
+      "severity": "error",
+      "code": "sitemap-unreachable",
+      "message": "No se pudo descargar el sitemap",
+      "url": "https://andairablox.es/sitemap.xml"
+    },
+    {
+      "severity": "warning",
+      "code": "robots-unreachable",
+      "message": "No se pudo leer robots.txt",
+      "url": "https://andairablox.es/robots.txt"
+    }
+  ],
+  "pages": [],
+  "backlinks": [],
+  "summary": {
+    "brokenLinks": 0,
+    "missingTitles": 0,
+    "missingDescriptions": 0,
+    "verifiedBacklinks": 0
+  }
+}

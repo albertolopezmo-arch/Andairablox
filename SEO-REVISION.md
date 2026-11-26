@@ -1,8 +1,8 @@
-# Revisión SEO de Andairablox — 21 de octubre de 2026
+# Revisión SEO de Andairablox — 20 de noviembre de 2026
 
 ## Resultado
 
-La versión local tiene una base técnica preparada para su publicación: 30 páginas de contenido, seis libros y tres idiomas. La auditoría local termina sin enlaces internos rotos ni referencias a imágenes inexistentes en los datos estructurados. Esto no equivale a una auditoría de la web pública, a una puntuación de Lighthouse ni a una garantía de indexación o posiciones.
+La versión local tiene una base técnica preparada para su publicación: 32 páginas públicas de contenido, seis libros y tres idiomas. La auditoría local termina sin enlaces internos rotos ni referencias a imágenes inexistentes en los datos estructurados. Esto no equivale a una auditoría de la web pública, a una puntuación de Lighthouse ni a una garantía de indexación o posiciones.
 
 ## Corregido
 
@@ -11,6 +11,9 @@ La versión local tiene una base técnica preparada para su publicación: 30 pá
 - Descripciones específicas y más concisas en los 18 documentos de libros, sin recortar las sinopsis visibles.
 - Las fichas vinculan WebPage con su Book y las migas de pan siguen Inicio → Libros → título.
 - La portada explica de forma visible que son libros infantiles de 7 a 12 años.
+- Se ha creado una página específica para «libros de Navidad para niños de 7 a 12 años», con respuesta directa, orientación por edades, preguntas frecuentes y enlaces de compra.
+- Se ha añadido una guía independiente para elegir un libro navideño según la edad, la autonomía lectora y los intereses del niño.
+- La ficha de La maravilla de la Navidad refuerza de forma natural las búsquedas sobre libros infantiles, Papá Noel, magia y regalos de Navidad sin inventar características comerciales.
 - La ficha de Halloween incluye un fragmento real del comienzo, entregado por el propietario, como texto visible. En EN/FR se conserva en español y se indica el idioma.
 - Archivo 404.html con noindex para servir errores reales en Cloudflare Pages. No se utiliza una regla SPA que convierta todas las rutas desconocidas en la portada.
 - Normalización explícita de URLs /index.html con reglas de ruta para Cloudflare Pages. Las redirecciones entre dominios deben configurarse en Cloudflare Rules; no están activadas.
@@ -18,9 +21,9 @@ La versión local tiene una base técnica preparada para su publicación: 30 pá
 
 ## Comprobaciones realizadas
 
-- 30 títulos únicos, 30 descripciones únicas y un H1 por página.
+- 32 títulos únicos, 32 descripciones únicas y un H1 por página pública.
 - 10 páginas ES, 10 EN y 10 FR, con lang, canonical y hreflang recíprocos y x-default.
-- Sitemap con exactamente las 30 direcciones canónicas; robots.txt permite rastrearlas.
+- Sitemap con exactamente las 32 direcciones canónicas; robots.txt permite rastrearlas.
 - El contenido principal, los enlaces de catálogo y los botones de compra están en el HTML inicial. Las animaciones y el asistente son mejoras mediante JavaScript.
 - Imágenes con dimensiones y atributo alt; las portadas no se vuelven a generar con IA.
 - Datos JSON-LD válidos sintácticamente y sus imágenes existentes; no se han inventado precios, valoraciones, ISBN ni disponibilidad.
@@ -33,7 +36,7 @@ La versión local tiene una base técnica preparada para su publicación: 30 pá
 1. Subir esta versión al alojamiento y conectar andairablox.es con HTTPS. La vista local 127.0.0.1 no es accesible para Google.
 2. Mantener la raíz de andairablox.es. Esta versión utiliza /en/ y /fr/ bajo ese dominio; decidir la migración de los antiguos andairablox.com y andairablox.fr y configurar las redirecciones 301 que correspondan. No dejar copias equivalentes compitiendo entre sí. Si se prefieren los dominios separados, ajustar antes los canonical/hreflang y la estructura de publicación.
 3. Verificar DNS, respuesta 200 para las páginas válidas, 404 para una ruta inventada y redirección de www y HTTP hacia la dirección preferida. En Cloudflare, las reglas entre dominios se configuran en el panel, no como reglas de hostname dentro de _redirects.
-4. Verificar el dominio en Google Search Console, enviar https://andairablox.es/sitemap.xml y solicitar la indexación de la portada y la ficha de Halloween. No se ha accedido a esa cuenta ni se ha enviado ninguna URL.
+4. Verificar el dominio en Google Search Console, enviar https://andairablox.es/sitemap.xml y solicitar la indexación de la portada, la ficha navideña y las dos páginas nuevas de Navidad. No se ha accedido a esa cuenta ni se ha enviado ninguna URL.
 5. Pasar PageSpeed Insights y la prueba de resultados enriquecidos sobre las URLs públicas. No se han medido Core Web Vitals reales ni se atribuye una puntuación de rendimiento.
 6. Completar los tres enlaces Amazon franceses que siguen pendientes: Diario de una Youtuber, Aventuras de vacaciones y El código perdido. Por ahora llevan al sitio francés original y se indica la limitación.
 
