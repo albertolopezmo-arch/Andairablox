@@ -114,3 +114,10 @@
 .christmas-home .book-card.purple .cover-link {
   background: #dbeadf;
 }
+
+/* Christmas gift CTA */
+.christmas-home .hero-purchase .button.christmas-buy {position:relative;display:inline-flex;align-items:center;justify-content:center;max-width:100%;padding:16px 22px 16px 65px;background:#b91f32!important;border-color:#b91f32!important;color:#fff!important;box-shadow:0 6px 15px #65102044;overflow:visible;white-space:normal;text-align:center;line-height:1.35;}
+.christmas-home .christmas-buy::before {content:"";position:absolute;left:25px;top:0;bottom:0;width:13px;background:linear-gradient(90deg,#c28b24,#ffe29a,#d6a53e);pointer-events:none;}
+.christmas-home .christmas-buy::after {content:"";position:absolute;left:2px;top:-21px;width:59px;height:40px;background:url('/assets/gift-bow.svg') center/contain no-repeat;pointer-events:none;}
+.christmas-home .hero-purchase .button.christmas-buy:hover {background:#98182a!important;border-color:#98182a!important;}
+.christmas-home .feature .button {background:#b91f32!important;border-color:#b91f32!important;color:white!important;}
