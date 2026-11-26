@@ -1,0 +1,1 @@
+69 URLs verificadas localmente. Tres colecciones en ES/EN/FR. Numeración y lectura independiente de AndairaBlox. Se conservan las ediciones y portadas existentes; no se presupone disponibilidad de traducciones. Pendiente prueba visual y en producción.
